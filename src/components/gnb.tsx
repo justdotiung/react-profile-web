@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 const Gnb = () => {
   return (
     <>
-      <Link to="/">홈</Link>
+      <Link to="/">OSM</Link>
       <Link to="/profile"> 프로필 </Link>
       <Link to="/s"> 강의문의 </Link>
       <Link to="/lectures">강의보러가기</Link>
