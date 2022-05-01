@@ -1,0 +1,85 @@
+@import "utils";
+
+$topHight: 80px;
+
+.gnb__bar {
+  position: fixed;
+  z-index: 3;
+  background-color: rgba($color: $baseBG, $alpha: 0.7);
+  width: 100%;
+  height: $topHight;
+  display: flex;
+
+  .gnb__container--logo {
+    font-family: $commonFont;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-left: 20px;
+  }
+
+  .gnb__container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    @include mobile {
+      .gnb__container--menu {
+        display: none;
+      }
+
+      .gnb__container--icon {
+        margin-left: auto;
+        margin-right: 20px;
+        color: $fontColor;
+        & .item {
+          font-size: 2rem;
+        }
+      }
+    }
+
+    @include desktop {
+      width: 1200px;
+      .gnb__container--menu {
+        display: flex;
+        flex-direction: row;
+        margin-left: auto;
+
+        & .item {
+          font-family: $commonFont;
+          margin-right: 30px;
+        }
+      }
+
+      .gnb__container--icon {
+        display: none;
+      }
+    }
+  }
+
+  .gnb__container--link {
+    text-decoration: none;
+    color: $fontColor;
+    &:hover {
+      color: inherit;
+    }
+    &:visited {
+      color: $fontColor;
+    }
+  }
+
+  .list__wrapper {
+    position: absolute;
+    top: $topHight;
+    width: 100%;
+    background-color: #fff;
+
+    & .item {
+      padding: 10px;
+      font-family: $commonFont;
+    }
+
+    @include desktop {
+      display: none;
+    }
+  }
+}

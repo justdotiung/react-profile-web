@@ -7,7 +7,7 @@ const App = () => {
   return (
     <>
       <Gnb />
-      {elem}
+      <div className="app__container">{elem}</div>
     </>
   );
 };

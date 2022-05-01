@@ -1,12 +1,18 @@
 const Profile = () => {
   return (
-    <div className="profile">
-      <img className="profile__image" src="/assets/profile_bs.jpg" alt="" />
-      <div className="profile__info">
-        <p>강사 오성미</p>
-        <span>다수강의</span>
-        <span>어디좋업</span>
-        <span>경력</span>
+    <div className="profile__wrapper">
+      <div className="profile__container">
+        <div className="profile__info">
+          <h2>시니어 맞춤</h2>
+          <span>디지털 교육</span>
+        </div>
+        <div className="img__contatiner">
+          <img
+            className="img__contatiner--image"
+            src="/assets/main_cover.png"
+            alt=""
+          />
+        </div>
       </div>
     </div>
   );

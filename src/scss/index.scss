@@ -1,24 +1,15 @@
 @import "profile";
+@import "gnb";
+@import "utils";
+
+@font-face {
+  font-family: "GmarketSansMedium";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 
 body {
   margin: 0;
 }
-
-// ul {
-//   list-style: none;
-//   padding: 0;
-// }
-
-// #root {
-//   max-width: 900px;
-//   margin: 0 auto;
-//   padding: 10px;
-// }
-// .gnb {
-//   ul {
-//     list-style: none;
-//     display: flex;
-//     flex-direction: row;
-//     gap: 10px;
-//   }
-// }
