@@ -5,10 +5,11 @@ $topHight: 80px;
 .gnb__bar {
   position: fixed;
   z-index: 3;
-  background-color: rgba($color: $baseBG, $alpha: 0.7);
+  background-color: rgba($color: $baseBG, $alpha: 1);
   width: 100%;
   height: $topHight;
   display: flex;
+  top: 0;
 
   .gnb__container--logo {
     font-family: $commonFont;

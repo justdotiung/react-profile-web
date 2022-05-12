@@ -1,13 +1,12 @@
-import { Lecture } from "../../types/type";
-import LectureItem from "./item";
+import LectureList from "../../components/lecture";
+import { lectures } from "../../db/lecture";
 
-const LectureList = ({ lectures }: { lectures: Lecture[] }) => {
+const LecturePage = () => {
   return (
-    <ul>
-      {lectures &&
-        lectures.map((data) => <LectureItem key={data.id} {...data} />)}
-    </ul>
+    <div className="lecture__container">
+      <LectureList lectures={lectures} />
+    </div>
   );
 };
 
-export default LectureList;
+export default LecturePage;

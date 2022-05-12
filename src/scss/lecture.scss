@@ -1,0 +1,21 @@
+.lecture__container {
+  position: relative;
+  top: 80px;
+  height: calc(100vh - 80px) !important;
+}
+
+.lecture__list {
+  @include mobile {
+    .lecture__item__container {
+      width: 100%;
+    }
+
+    .lecture__item__image {
+      width: 100%;
+    }
+  }
+}
+
+// .lecture__item--image {
+//   width: 100px;
+// }
