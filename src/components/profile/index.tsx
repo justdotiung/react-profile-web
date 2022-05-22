@@ -3,8 +3,8 @@ const Profile = () => {
     <div className="profile__wrapper">
       <div className="profile__container">
         <div className="profile__info">
-          <h2>시니어 맞춤</h2>
-          <span>디지털 교육</span>
+          <span className="info__header">시니어 맞춤</span>
+          <span className="info__subject">디지털 교육</span>
         </div>
         <div className="img__contatiner">
           <img

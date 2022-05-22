@@ -1,12 +1,13 @@
 import Banner from "../components/bnner";
-import Main from "../components/main/main";
+import Portfolio from "../components/portfolio/portfolio";
 import Profile from "../components/profile";
+import { certificate, career } from "../db/lecture";
 
 const MainPage = () => {
   return (
     <>
-      <Main />
       <Profile />
+      <Portfolio infos={certificate} career={career} />
       <Banner />
     </>
   );
